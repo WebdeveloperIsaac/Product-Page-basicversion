@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  #page-wrapper {
+    position: relative;
+  }
+  
+  li {
+    list-style:none;
+  }
+.container{
+    
+    text-align: center;
+}
+.logo {
+    width: 60vw;
+  }
+  nav {
+    font-weight: 400;
+  }
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+ 
+
+header{
+    display:flex;
+    position : fixed;
+    align-items:flex-start;    
+    top:0;
+    left: 0;
+    background-color: rgb(8, 8, 8);
+    justify-content:space-around;
+    width: 100%;
+}
+.nav-link{
+          color: springgreen;
+          justify-content:space-around;
+          font-size: 20px;
+          padding:10px;
+          text-decoration: none;
+}
+.nav-link:hover{
+    background-color: rgb(95, 96, 97);
+
+}
+#header-img{
+    height: 80px;
+    width:180px;
+}
+.btn{
+   background-color: rgb(230, 238, 223);
+   font-size: large;
+   cursor: pointer;
+}
+#submit{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:100px;
+  width: 8vw;
+  height:2vw ;
+}
+#submit:hover{
+  background-color: rgb(129, 250, 156);
+}
+#email{
+  width: 50vw;
+  height: 3vw;
+  margin: 10px;
+  
+}
+div{
+    font-size: 20px;
+}
+#pricing {
+  margin-top:50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  text-align: center;
+  width:auto;
+  margin:10px;
+  padding:10px;
+  padding-top: 20px;
+  border: 2px solid #000;
+  border-radius:1vw;
+  border-style: solid;
+}
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 50px;
+}
+
+.product > ol {
+  margin: 5px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+  list-style:disc;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: rgb(9, 206, 255);
+  transition: background-color 0.5s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  padding-left:75vw;
+}
+
